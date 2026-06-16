@@ -92,7 +92,7 @@ The workbook includes:
 * Implementation roadmap
 * Data dictionary
 
-[Download the Excel Workbook](data/NorthStar%20Invoice%20Approval%20Optimization%20Workbook.xlsx)
+[NorthStar Invoice Approval Optimization Workbook.xlsx ](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fnelsonkbrenton-BA%2FInvoice-Approval-Process-Improvement%2Frefs%2Fheads%2Fmain%2FNorthStar%2520Invoice%2520Approval%2520Optimization%2520Workbook.xlsx&wdOrigin=BROWSELINK)
 
 ## Recommended KPIs
 
@@ -134,17 +134,6 @@ The workbook includes:
 * Add duplicate invoice detection and validation controls to reduce payment risk.
 * Separate PO and non-PO invoice workflows so exceptions can be reviewed more efficiently.
 * Evaluate Microsoft Dynamics 365 workflow capability or AP automation software after the process has been standardized.
-
-## Deliverables
-
-| Deliverable                                                               | Description                                                                                         |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [Executive Summary](docs/Executive%20Summary.pdf)                         | High-level summary of the business problem, root cause, impact, recommendation, and success metrics |
-| [Current State Analysis](docs/Current%20State%20Analysis.pdf)             | Current workflow, tools, swimlane, process observations, bottlenecks, and operating risks           |
-| [Root Cause Analysis](docs/Root%20Cause%20Analysis.pdf)                   | Symptoms, bottlenecks, root causes, five-why analysis, and risk implications                        |
-| [Future State Recommendations](docs/Future%20State%20Recommendations.pdf) | Future-state process design, swimlane, phased recommendations, and automation opportunities         |
-| [KPI Framework](docs/KPI%20Framework.pdf)                                 | KPI definitions, dashboard views, measurement design, baseline approach, and governance cadence     |
-| [Implementation Roadmap](docs/Implementation%20Roadmap.pdf)               | 30-60-90 day plan, rollout phases, testing strategy, training plan, risks, and mitigations          |
 
 ## Skills Demonstrated
 
