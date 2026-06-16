@@ -132,18 +132,6 @@ The analysis focused on approval routing, exception handling, invoice tracking, 
 9. Approved invoices are sent to Accounting for payment.
 10. Dashboard reporting updates invoice status, aging, and approval performance.
 
-## Deliverables
-
-* Current-State Process Analysis
-* Root Cause Analysis
-* Future-State Process Design
-* KPI Framework
-* Dashboard Requirements
-* Business Requirements Document
-* User Stories and Acceptance Criteria
-* Implementation Roadmap
-* Executive Summary
-
 ## Outcome
 
 This project recommends a more scalable invoice approval process for Northstar Manufacturing. The future-state process reduces manual work, improves approval visibility, strengthens financial controls, and helps the VP of Finance, Director of Operations, and Accounts Payable Manager monitor invoice performance through operational KPIs.
