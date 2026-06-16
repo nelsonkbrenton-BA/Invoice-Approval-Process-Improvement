@@ -89,6 +89,10 @@ The analysis focused on approval routing, exception handling, invoice tracking, 
 * There was limited reporting on invoice aging and approval performance.
 * Audit trail visibility was limited.
 
+## Process Map
+<img width="2898" height="1638" alt="Process Map" src="https://github.com/user-attachments/assets/b5d315b9-bad7-4114-9044-c8b76b2bd209" />
+
+
 ## Recommendations
 
 * Standardize invoice intake by requiring key invoice fields before routing, including vendor name, invoice number, amount, department, PO number, and supporting documentation.
