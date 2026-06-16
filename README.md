@@ -1,30 +1,28 @@
-# Invoice-Approval-Process-Improvement
+# Invoice Approval Process Improvement
 
-Analysis of a manual invoice approval workflow at Northstar Manufacturing using business process analysis, root cause analysis, KPI design, and automation recommendations.
+Operations analysis project focused on improving invoice approval workflow efficiency, visibility, controls, KPI reporting, and automation readiness at NorthStar Manufacturing.
 
 ## Project Overview
 
-This project was completed from the perspective of an Operations Analyst at Northstar Manufacturing, a mid-sized manufacturing company managing vendor invoices, purchase orders, department approvals, and payment processing.
+This project was completed from the perspective of an Operations Analyst at NorthStar Manufacturing, a mid-sized manufacturing company managing vendor invoices, purchase orders, department approvals, and payment processing.
 
-The VP of Finance, Director of Operations, and Accounts Payable Manager requested an analysis of the invoice approval process due to recurring approval delays, manual follow-up, unclear routing, and limited visibility into invoice status.
+The VP of Finance, Director of Operations, and Accounts Payable Manager requested an analysis of the invoice approval process due to recurring approval delays, manual follow-up, unclear routing, late-payment risk, and limited visibility into invoice status.
 
-The goal of this project was to identify approval bottlenecks, understand the root causes of processing delays, and recommend a future-state workflow that improves efficiency, visibility, compliance, and financial control.
+The goal of this project was to identify approval bottlenecks, understand the root causes of processing delays, analyze workflow performance, and recommend a future-state process that improves efficiency, visibility, compliance, and financial control.
 
 ## Business Problem
 
-Northstar Manufacturing was experiencing delays in its invoice approval process. Invoices were received through email, reviewed manually by Accounts Payable, routed to department approvers through Outlook, and tracked using spreadsheets.
+NorthStar Manufacturing was experiencing delays in its invoice approval process. Invoices were received through email, reviewed manually by Accounts Payable, routed to department approvers through Outlook, and tracked using spreadsheets.
 
 The Accounts Payable team often had to manually determine the correct approver, follow up on pending approvals, and resolve missing or incorrect invoice information before payment could move forward.
 
-The VP of Finance needed better visibility into invoice aging, late payment risk, and approval compliance. The Director of Operations wanted to understand whether process delays were affecting department-level efficiency. The Accounts Payable Manager needed to reduce manual follow-up, rework, and time spent tracking approvals.
+The VP of Finance needed better visibility into invoice aging, late-payment risk, approval compliance, and financial control. The Director of Operations wanted to understand whether approval delays were affecting department-level efficiency. The Accounts Payable Manager needed to reduce manual follow-up, rework, and time spent tracking approvals.
 
-The goal of this analysis was to determine whether delays were caused by unclear approval ownership, missing invoice information, approval thresholds, non-PO invoice handling, system limitations, or lack of workflow automation.
+The analysis focused on determining whether delays were caused by unclear approval ownership, missing invoice information, approval thresholds, non-PO invoice handling, system limitations, or lack of workflow automation.
 
 ## Project Objective
 
-The objective of this project was to analyze Northstar Manufacturing’s current invoice approval workflow, identify process inefficiencies, document root causes, and recommend improvements that could reduce manual effort, improve approval turnaround time, and strengthen invoice processing controls.
-
-The analysis focused on approval routing, exception handling, invoice tracking, approval thresholds, stakeholder responsibilities, and dashboard requirements for finance and operations leadership.
+The objective of this project was to analyze NorthStar Manufacturing’s current invoice approval workflow, identify process inefficiencies, document root causes, and recommend improvements that could reduce manual effort, improve approval turnaround time, strengthen invoice processing controls, and prepare the process for future automation.
 
 ## Business Questions
 
@@ -33,10 +31,10 @@ The analysis focused on approval routing, exception handling, invoice tracking, 
 * Are approval rules clearly defined and consistently followed?
 * How does manual routing affect invoice cycle time?
 * Which departments or approval levels create the most bottlenecks?
-* What visibility does the VP of Finance need to monitor invoice aging and late payment risk?
+* What visibility does the VP of Finance need to monitor invoice aging and late-payment risk?
 * What visibility does the Director of Operations need to monitor department-level approval performance?
 * What does the AP Manager need to reduce manual follow-up and rework?
-* What parts of the process should be automated first?
+* What parts of the process should be standardized before automation?
 
 ## Current-State Process
 
@@ -47,8 +45,13 @@ The analysis focused on approval routing, exception handling, invoice tracking, 
 5. Invoice is routed to the approver by email.
 6. Approver reviews the invoice and approves, rejects, or requests clarification.
 7. AP follows up manually on pending approvals.
-8. Approved invoice is sent for payment processing.
-9. Invoice is paid and documentation is retained for audit purposes.
+8. AP updates invoice status in the tracker.
+9. Approved invoice is sent to Accounting for payment processing.
+10. Invoice is paid and documentation is retained for audit purposes.
+
+## Process Map
+
+<img width="2898" height="1638" alt="Process Map" src="https://github.com/user-attachments/assets/b5d315b9-bad7-4114-9044-c8b76b2bd209" />
 
 ## Key Findings
 
@@ -62,47 +65,34 @@ The analysis focused on approval routing, exception handling, invoice tracking, 
 
 ## Root Cause Analysis
 
-### Process
+The root cause was not simply that approvers were slow to respond. The deeper issue was that NorthStar did not have a standardized, system-supported invoice approval workflow with current approval rules, centralized tracking, automated routing, reminders, escalations, and reliable audit evidence.
 
-* Approval routing was manual.
-* Escalation rules were not standardized.
-* Invoice follow-up depended on AP reminders.
-* Non-PO invoices required additional review steps.
+| Category   | Root Cause                                                                                                     |
+| ---------- | -------------------------------------------------------------------------------------------------------------- |
+| Process    | Approval routing, tracking, follow-up, and escalation were manual                                              |
+| People     | Approval ownership was sometimes unclear and AP carried the coordination burden                                |
+| Data       | Missing PO numbers, missing documentation, incorrect vendor information, and duplicate invoices created rework |
+| Systems    | The process relied heavily on Outlook and Excel, with limited workflow automation                              |
+| Visibility | Finance and Operations lacked real-time insight into invoice aging, approval delays, and workload              |
+| Controls   | Approval evidence was fragmented across email, spreadsheets, shared drives, and accounting systems             |
 
-### People
+## Data & Workbook
 
-* Approval ownership was sometimes unclear.
-* Approvers did not always respond within expected timeframes.
-* AP carried the burden of tracking and follow-up.
+The Excel workbook uses a representative synthetic sample of NorthStar invoice approval records to model a monthly operating environment of approximately 1,200 vendor invoices.
 
-### Data
+The workbook includes:
 
-* Invoices were often missing purchase order numbers.
-* Supporting documentation was not always included.
-* Vendor or department information was sometimes incorrect.
-* Duplicate invoices created payment risk.
+* Invoice tracker sample
+* KPI dashboard
+* Approval matrix
+* Exception log
+* Stakeholder register
+* Requirements
+* User stories
+* Implementation roadmap
+* Data dictionary
 
-### Systems
-
-* The process relied heavily on Outlook and Excel.
-* There was no automated workflow routing.
-* There was limited reporting on invoice aging and approval performance.
-* Audit trail visibility was limited.
-
-## Process Map
-<img width="2898" height="1638" alt="Process Map" src="https://github.com/user-attachments/assets/b5d315b9-bad7-4114-9044-c8b76b2bd209" />
-
-
-## Recommendations
-
-* Standardize invoice intake by requiring key invoice fields before routing, including vendor name, invoice number, amount, department, PO number, and supporting documentation.
-* Automate approval routing based on department ownership, invoice amount, PO status, and approval authority.
-* Create approval thresholds that automatically determine whether invoices route to a manager, director, procurement manager, or finance leader.
-* Implement automated reminders and escalation rules for invoices approaching or exceeding approval deadlines.
-* Create a centralized invoice tracking dashboard to monitor pending approvals, overdue invoices, exception types, and approval cycle time.
-* Add duplicate invoice detection and validation controls to reduce payment risk.
-* Separate PO and non-PO invoice workflows so exceptions can be reviewed more efficiently.
-* Review and maintain the approval matrix regularly to prevent routing delays caused by outdated ownership information.
+[Download the Excel Workbook](data/NorthStar%20Invoice%20Approval%20Optimization%20Workbook.xlsx)
 
 ## Recommended KPIs
 
@@ -117,26 +107,79 @@ The analysis focused on approval routing, exception handling, invoice tracking, 
 | Non-PO Invoice Volume       | Tracks invoices requiring additional manual review      |
 | Overdue Approval Count      | Identifies stalled approvals                            |
 | AP Follow-Up Volume         | Measures manual effort required by AP                   |
-
+| Late Payment Count          | Measures payment risk and financial impact              |
 
 ## Future-State Process
 
 1. Invoice is submitted through a centralized intake channel.
-2. Required invoice fields are validated before submission.
+2. Required invoice fields are validated before routing.
 3. The system checks for duplicate invoices.
 4. The invoice is classified as PO or non-PO.
-5. Approval routing is automatically assigned based on department, amount, and approval authority.
-6. Approver receives a workflow notification.
-7. Automated reminders are triggered before the SLA deadline.
-8. Overdue invoices are escalated based on defined rules.
-9. Approved invoices are sent to Accounting for payment.
-10. Dashboard reporting updates invoice status, aging, and approval performance.
+5. Exceptions are flagged and categorized.
+6. Approval routing is automatically assigned based on department, invoice amount, and approval authority.
+7. Approver receives a workflow notification with invoice details and due date.
+8. Automated reminders are triggered before or after SLA breach.
+9. Overdue invoices are escalated based on defined rules.
+10. Approved invoices are sent to Accounting with required documentation.
+11. Dashboard reporting updates invoice status, aging, exceptions, and approval performance.
 
-## Outcome
+## Recommendations
 
-This project recommends a more scalable invoice approval process for Northstar Manufacturing. The future-state process reduces manual work, improves approval visibility, strengthens financial controls, and helps the VP of Finance, Director of Operations, and Accounts Payable Manager monitor invoice performance through operational KPIs.
+* Standardize invoice intake by requiring key invoice fields before routing, including vendor name, invoice number, amount, department, PO number, and supporting documentation.
+* Update and govern the approval matrix to prevent routing delays caused by outdated department ownership.
+* Define approval SLAs so approvers understand expected turnaround times.
+* Automate approval routing based on department ownership, invoice amount, PO status, and approval authority.
+* Implement automated reminders and escalation rules for invoices approaching or exceeding approval deadlines.
+* Create a centralized invoice tracking dashboard to monitor pending approvals, overdue invoices, exception types, approval cycle time, and late-payment risk.
+* Add duplicate invoice detection and validation controls to reduce payment risk.
+* Separate PO and non-PO invoice workflows so exceptions can be reviewed more efficiently.
+* Evaluate Microsoft Dynamics 365 workflow capability or AP automation software after the process has been standardized.
 
-The recommendations create a clearer workflow for Accounts Payable, department approvers, and finance leadership while reducing the risk of late payments, duplicate invoices, and unresolved approval bottlenecks.
+## Deliverables
+
+| Deliverable                                                               | Description                                                                                         |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [Executive Summary](docs/Executive%20Summary.pdf)                         | High-level summary of the business problem, root cause, impact, recommendation, and success metrics |
+| [Current State Analysis](docs/Current%20State%20Analysis.pdf)             | Current workflow, tools, swimlane, process observations, bottlenecks, and operating risks           |
+| [Root Cause Analysis](docs/Root%20Cause%20Analysis.pdf)                   | Symptoms, bottlenecks, root causes, five-why analysis, and risk implications                        |
+| [Future State Recommendations](docs/Future%20State%20Recommendations.pdf) | Future-state process design, swimlane, phased recommendations, and automation opportunities         |
+| [KPI Framework](docs/KPI%20Framework.pdf)                                 | KPI definitions, dashboard views, measurement design, baseline approach, and governance cadence     |
+| [Implementation Roadmap](docs/Implementation%20Roadmap.pdf)               | 30-60-90 day plan, rollout phases, testing strategy, training plan, risks, and mitigations          |
+
+## Skills Demonstrated
+
+* Operations Analysis
+* Workflow Optimization
+* Process Improvement
+* Bottleneck Identification
+* Root Cause Analysis
+* Current-State Process Mapping
+* Future-State Process Design
+* KPI Development
+* Dashboard Requirements Planning
+* Financial Operations Analysis
+* Automation Readiness Assessment
+* Implementation Roadmap Planning
+* Change Management Planning
+
+## Tools & Methods
+
+* Microsoft Excel
+* Microsoft Outlook
+* Microsoft Dynamics 365 process review
+* Process mapping
+* Swimlane analysis
+* Root cause analysis
+* Five-why analysis
+* KPI framework design
+* Workflow automation planning
+* 30-60-90 day implementation planning
+
+## Project Outcome
+
+This project recommends a more scalable invoice approval process for NorthStar Manufacturing. The future-state process reduces manual AP coordination, improves approval visibility, strengthens financial controls, and helps the VP of Finance, Director of Operations, and Accounts Payable Manager monitor invoice performance through operational KPIs.
+
+The recommended path is to standardize approval rules, tracking, SLAs, exceptions, and KPI reporting first. Once the process foundation is stable, NorthStar can automate routing, reminders, escalations, approval queues, audit trail capture, and dashboard reporting.
 
 ## Author
 
